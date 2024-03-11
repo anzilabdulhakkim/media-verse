@@ -1,0 +1,116 @@
+*{
+    color: white;  
+    background-color: black;
+}
+
+.sidebar{
+    background-color: #fff;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-left: 2%;
+    padding-top: 80px;
+    overflow-y: scroll;
+}
+
+.side-footer{
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+.side-footer a{
+    padding-right:5px;
+    margin-bottom: 8px;
+}
+
+.side-footer h6{
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #ccc !important;
+    border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background-color: #000 !important;
+}
+
+.sortcut-links img{
+    width: 20px;
+    margin-right: 20px;
+}
+.side-link{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.sidebar hr{
+    border: 0;
+    height: 1px;
+    background: #ccc !important;
+    width: 85%;
+}
+
+.subscribed-list h3{
+    font-size: 13px;
+    margin: 20px 0;
+    color: #5a5a5a;
+}
+
+.subscribed-list img{
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.subscribed-list {
+    max-height: calc(100vh - 140px); 
+    height: 100%;
+}
+
+.small-sidebar{
+    width: 5%;
+}
+.small-sidebar p{
+    display: none;
+}
+.small-sidebar h3{
+    display: none;
+}
+.small-sidebar hr{
+    width:50% ;
+    margin-bottom: 25px;
+}
+
+.small-side-footer{
+    display: none;
+}
+
+.side-link p{
+    overflow-x: hidden;
+}
+
+.side-link.active img{
+    padding-bottom: 2px;
+    border-bottom: 3px solid red;
+}
+
+@media (max-width:900px){
+    .sidebar{
+        display: none;
+    }
+    .side-footer{
+        display: none;
+    }
+}
