@@ -103,7 +103,7 @@ function Sidebar({sidebar,category,setCategory}){
             <img src={karikku} alt="" /><p>Karikku</p>
           </div>
 
-          <div className="side-link">
+          <div className="side-link" id='showmore'>
             <p> ▼ Show more</p>
           </div>
           <hr />
