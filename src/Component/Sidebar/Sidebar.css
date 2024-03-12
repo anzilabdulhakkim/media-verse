@@ -12,6 +12,7 @@
     padding-left: 2%;
     padding-top: 80px;
     overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 .side-footer{
@@ -79,8 +80,12 @@
     height: 100%;
 }
 
+#showmore{
+    width: 90%;
+}
+
 .small-sidebar{
-    width: 5%;
+    width: 6%;
 }
 .small-sidebar p{
     display: none;
@@ -98,7 +103,12 @@
 }
 
 .side-link p{
-    overflow-x: hidden;
+    font-size: 0.8rem;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 67%;
 }
 
 .side-link.active img{
@@ -107,10 +117,21 @@
 }
 
 @media (max-width:900px){
-    .sidebar{
+    .sidebar {
         display: none;
+    }
+    .small-sidebar{
+        display: block;
+        width: 14%;
+        margin-left: 5px;
+        scroll-behavior: smooth;
     }
     .side-footer{
         display: none;
+    }
+}
+@media (max-width:1200px){
+    .subscribed-list .side-link p{
+        font-size: 0.6rem;
     }
 }

@@ -49,9 +49,6 @@ nav{
     border-radius: 50%;
 }
 @media (max-width:900px){
-    .menu-icon{
-        display: none;
-    }
     .nav-right img{
         display: none;
     }
@@ -67,7 +64,7 @@ nav{
     }
     .nav-left .logo{
         margin:0;
-        margin-left: 40px;
+        margin-left: -15px;
         width: 120px;
         height: 48px;
     }
