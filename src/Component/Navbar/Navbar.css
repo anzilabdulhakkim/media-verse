@@ -22,6 +22,10 @@ nav{
     height: 48px;
 }
 
+.nav-middle{
+    position: relative;
+}
+
 .nav-middle .search-box{
     border: 1px solid #ccc ;
     margin-right: 15px;
@@ -35,8 +39,38 @@ nav{
     background: transparent;
 }
 
+.nav-middle .search-box .search-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
 .nav-middle .search-box img{
     width: 15px;
+}
+
+.suggestions-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #282828;
+    border: 1px solid #4d4d4d;
+    border-radius: 5px;
+    z-index: 1000;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.suggestion-item:hover {
+    background-color: #4d4d4d;
 }
 
 .nav-right img{
